@@ -1,8 +1,12 @@
+# +
 import os
 import numpy as np
 import tensorflow as tf
-from keras_contrib.layers import InstanceNormalization
+# from keras_contrib.layers import InstanceNormalization
+from tensorflow_addons.layers import InstanceNormalization
+
 from tensorflow.keras.layers import Layer, InputSpec
+# -
 
 PRETRAINED_WEIGHT_DIR = os.path.join(
     os.path.dirname(os.path.realpath(__file__)), "pretrained_weights")
